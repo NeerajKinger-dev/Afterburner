@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<keys name="Afterburner CorelDRAW Overrides">
+  <!-- Core Tools -->
+  <bind key="space" action="ToolSelectItem" />  <!-- Spacebar to Pick/Select Tool -->
+  <bind key="F10" action="ToolNodeItem" />       <!-- F10 to Shape/Node Tool -->
+  <bind key="Z" action="ToolZoomItem" />         <!-- Z to Zoom Tool -->
+  
+  <!-- Creation Tools -->
+  <bind key="F5" action="ToolFreehandItem" />    <!-- F5 to Freehand Curve Tool -->
+  <bind key="F6" action="ToolRectItem" />        <!-- F6 to Rectangle creation -->
+  <bind key="F7" action="ToolEllipseItem" />     <!-- F7 to Ellipse creation -->
+</keys>

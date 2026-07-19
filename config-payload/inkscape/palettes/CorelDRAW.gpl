@@ -1,0 +1,13 @@
+GIMP Palette
+Name: CorelDRAW Classic
+Columns: 16
+#
+  0   0   0	Black
+255 255 255	White
+255   0   0	Corel Red
+  0 255   0	Corel Green
+  0   0 255	Corel Blue
+255 255   0	Corel Yellow
+255   0 255	Corel Magenta
+  0 255 255	Corel Cyan
+128 128 128	Gray
