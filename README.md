@@ -3,14 +3,14 @@
 </p>
 
 # Afterburner 🚀
-> Frictionless workspace migration patches for creative professionals running on Ubuntu/Linux.
+> Frictionless workspace migration patches for creative professionals running on Linux & Windows.
 
-Afterburner instantly overhauls Inkscape to match classic industry UI layouts and keyboard hotkey profiles. It eliminates muscle-memory breakdown and HTML/vector formatting friction, dramatically lowering the barrier to switching your graphic production environment to Linux.
+Afterburner instantly overhauls Inkscape to match classic industry UI layouts and keyboard hotkey profiles. It eliminates muscle-memory breakdown and formatting friction, dramatically lowering the barrier to switching or migrating your graphic production environment.
 
 ## 🚀 Roadmap & Implementation
 
 ### Phase 1: Core Layout Core (Current)
-*   [x] Automated path-detection installer framework (`install.sh`)
+*   [x] Automated path-detection installer framework (`install.sh` for Linux & `install.ps1` for Windows)
 *   [x] CorelDRAW industry-standard keyboard shortcut profiles
 *   [x] CorelDRAW classic palette swatch strip integration (`CorelDRAW.gpl`)
 *   [x] Single-column tool hierarchies and docker panel alignment
@@ -22,11 +22,19 @@ Afterburner instantly overhauls Inkscape to match classic industry UI layouts an
 
 ## Installation
 
-Open your terminal inside the extracted `Afterburner` directory and execute the installer:
-
+### 🐧 Linux (Ubuntu / Debian / Flatpak / Snap / Native)
+Open your terminal inside the `Afterburner` directory:
 ```bash
 chmod +x install.sh
 ./install.sh
 ```
+
+### 🪟 Windows (Inkscape 1.x+)
+Open PowerShell inside the `Afterburner` directory:
+```powershell
+.\install.ps1
+```
+*(If PowerShell script execution is restricted, run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` before running).*
+
 
 
