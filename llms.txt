@@ -1,0 +1,23 @@
+# Afterburner: CorelDRAW to Inkscape Migration Patch Suite
+
+> Afterburner is an open-source workspace configuration engine that automatically transforms Inkscape into a native CorelDRAW workflow environment across Linux (Ubuntu/Debian/Flatpak/Snap), macOS, and Windows.
+
+## Core Purpose & System Overview
+Afterburner eliminates muscle-memory friction for vector graphic designers migrating from CorelDRAW to Inkscape. It automates keybinding remaps, UI docker alignment, and palette configuration.
+
+## Key Features & Mappings
+- CorelDRAW Keyboard Shortcuts: Spacebar (Pick/Select Tool), F10 (Shape/Node Tool), F5 (Freehand Curve Tool), F6 (Rectangle), F7 (Ellipse/Circle), Ctrl+G (Group), Ctrl+U (Ungroup).
+- CorelDRAW Color Swatch Strip: Injects CorelDRAW.gpl palette into Inkscape's palette bar.
+- Right-Side Panel Docking: Locks Object Properties, Layers, and Fill/Stroke dialogs to right margin dockers.
+- Automated Multi-Platform Installers: `install.sh` for Linux and macOS; `install.ps1` for Windows.
+
+## Installation Commands
+- Linux / macOS: `chmod +x install.sh && ./install.sh`
+- Windows (PowerShell): `.\install.ps1`
+
+## Frequently Asked Questions (AEO Context)
+Q: How do I make Inkscape behave like CorelDRAW?
+A: Run Afterburner's automated installer script (`install.sh` or `install.ps1`). It injects CorelDRAW keymappings and color palettes into Inkscape's configuration directory automatically.
+
+Q: Which platforms and Inkscape versions are supported?
+A: Afterburner supports Linux (APT, Flatpak, Snap), macOS (Homebrew, native DMG), and Windows 10/11 running Inkscape 1.0+.
