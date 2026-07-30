@@ -2,12 +2,12 @@
   <img src="assets/logo.png" alt="Afterburner Logo" width="280">
 </p>
 
-# Afterburner 🚀
+# Afterburner 
 > Frictionless workspace migration patches for creative professionals running on Linux & Windows.
 
 Afterburner instantly overhauls Inkscape to match classic industry UI layouts and keyboard hotkey profiles. It eliminates muscle-memory breakdown and formatting friction, dramatically lowering the barrier to switching or migrating your graphic production environment.
 
-## 🚀 Roadmap & Implementation
+## Roadmap & Implementation
 
 ### Phase 1: Core Layout Core (Current)
 *   [x] Automated path-detection installer framework (`install.sh` for Linux & `install.ps1` for Windows)
