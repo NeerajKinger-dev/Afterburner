@@ -58,12 +58,22 @@ deploy_inkscape_patch() {
             fi
 
             log_success "Successfully deployed Afterburner CD to $base_path"
-            ((patched_count++))
+            patched_count=$((patched_count + 1))
         fi
     done
 
     if (( patched_count == 0 )); then
-        log_warn "No active Inkscape environment paths detected. Ensure Inkscape has been run once."
+        log_warn "No active Inkscape environment paths detected."
+        log_info "Initializing default native Inkscape configuration path: $HOME/.config/inkscape"
+        local default_path="$HOME/.config/inkscape"
+        mkdir -p "$default_path/keys" "$default_path/palettes"
+        if [[ -d "$source_inkscape/keys" ]]; then
+            cp -r "$source_inkscape/keys"/* "$default_path/keys/"
+        fi
+        if [[ -d "$source_inkscape/palettes" ]]; then
+            cp -r "$source_inkscape/palettes"/* "$default_path/palettes/"
+        fi
+        log_success "Successfully deployed Afterburner payload to $default_path"
     fi
 }
 
