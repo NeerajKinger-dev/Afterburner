@@ -30,9 +30,11 @@ fi
 
 # --- Target Paths ---
 declare -a INKSCAPE_TARGETS=(
-    "$HOME/.var/app/org.inkscape.Inkscape/config/inkscape" # Flatpak
-    "$HOME/snap/inkscape/current/.config/inkscape"         # Snap
-    "$HOME/.config/inkscape"                               # Native APT
+    "$HOME/.var/app/org.inkscape.Inkscape/config/inkscape" # Linux Flatpak
+    "$HOME/snap/inkscape/current/.config/inkscape"         # Linux Snap
+    "$HOME/.config/inkscape"                               # Linux Native APT / Standard
+    "$HOME/Library/Application Support/org.inkscape.Inkscape/config/inkscape" # macOS App
+    "$HOME/Library/Application Support/Inkscape"           # macOS Native / Homebrew
 )
 
 deploy_inkscape_patch() {
