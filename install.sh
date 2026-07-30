@@ -62,7 +62,7 @@ deploy_inkscape_patch() {
                 cp -r "$source_inkscape/extensions"/* "$base_path/extensions/"
             fi
 
-            log_success "Successfully deployed Afterburner v2.0 profile & extensions to $base_path"
+            log_success "Successfully deployed Afterburner v2.1 profile & extensions to $base_path"
             patched_count=$((patched_count + 1))
         fi
     done

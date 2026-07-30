@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>CorelDRAW Compatible Export</name>
+    <id>org.afterburner.export.corel.interop</id>
+
+    <param name="output_path" type="path" mode="file" filetypes="pdf,eps" _gui-text="Export Destination Path:"></param>
+
+    <param name="font_strategy" type="optiongroup" appearance="combo" _gui-text="Font Mapping Strategy:">
+        <option value="path">Convert All Text to Paths (Outlines / Curves - Ctrl+Q)</option>
+        <option value="embed">Embed Original System Fonts</option>
+    </param>
+
+    <param name="dpi_normalization" type="bool" _gui-text="Force Standard 96 DPI / Physical Units (mm/in)">true</param>
+
+    <param name="export_format" type="optiongroup" appearance="combo" _gui-text="Export Format:">
+        <option value="pdf">PDF (Vector Interop - CorelDRAW X3+)</option>
+        <option value="eps">EPS (Legacy CorelDRAW PostScript)</option>
+    </param>
+
+    <param name="export_multipage" type="bool" _gui-text="Export All Inkscape Pages into Multi-Page Document">true</param>
+
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Afterburner">
+                <submenu name="CorelDRAW Tools"/>
+            </submenu>
+        </effects-menu>
+    </effect>
+
+    <script>
+        <command location="inx" interpreter="python">export_corel_interop.py</command>
+    </script>
+</inkscape-extension>

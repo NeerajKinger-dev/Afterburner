@@ -54,7 +54,7 @@ if (Test-Path -Path (Join-Path -Path $PayloadDir -ChildPath "extensions")) {
     Copy-Item -Path $SourceExtensions -Destination $ExtensionsTarget -Recurse -Force
 }
 
-Write-Host-Color "[SUCCESS] Successfully deployed Afterburner v2.0 profile & extensions to $InkscapeUserConfig" "Green"
+Write-Host-Color "[SUCCESS] Successfully deployed Afterburner v2.1 profile & extensions to $InkscapeUserConfig" "Green"
 Write-Host-Color "====================================================" "Cyan"
 Write-Host-Color "[SUCCESS] Afterburner payload injected! Restart Inkscape to initialize." "Green"
 Write-Host-Color "====================================================" "Cyan"
