@@ -7,15 +7,15 @@ $ErrorActionPreference = "Stop"
 
 Clear-Host
 
-Write-Host "  ___  ______ _____ _____ ____  _____ _____  _   _ _____ _____ " -ForegroundColor Red
-Write-Host " / _ \ |  ___|_   _|  ___|  _ \|  _  /  ___|| \ | |  ___|  _  \" -ForegroundColor Red
-Write-Host "/ /_\ \| |_    | | | |__ | |_) | |_| \ `--. |  \| | |__ | |_) |" -ForegroundColor Red
-Write-Host "|  _  ||  _|   | | |  __||  _ <|  _  |`--. \| . ` |  __||  _ < " -ForegroundColor Red
-Write-Host "| | | || |    _| |_| |___| |_) | | | /\__/ /| |\  | |___| |_) |" -ForegroundColor Red
-Write-Host "\_| |_/\_|   |_____|_____|____/\_| |_\____/ \_| \_|_____|____/ " -ForegroundColor Red
+Write-Host "  █████╗ ███████╗████████╗███████╗██████╗ ██████╗ ██╗   ██╗██████╗ ███╗   ██╗███████╗██████╗ " -ForegroundColor Red
+Write-Host " ██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██║   ██║██╔══██╗████╗  ██║██╔════╝██╔══██╗" -ForegroundColor Red
+Write-Host " ███████║█████╗     ██║   █████╗  ██████╔╝██████╔╝██║   ██║██████╔╝██╔██╗ ██║█████╗  ██████╔╝" -ForegroundColor Red
+Write-Host " ██╔══██║██╔══╝     ██║   ██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗██║╚██╗██║██╔══╝  ██╔══██╗" -ForegroundColor Red
+Write-Host " ██║  ██║██║        ██║   ███████╗██║  ██║██████╔╝╚██████╔╝██║  ██║██║ ╚████║███████╗██║  ██║" -ForegroundColor Red
+Write-Host " ╚═╝  ╚═╝╚═╝        ╚═╝   ╚══════╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝" -ForegroundColor Red
 Write-Host ""
 Write-Host "  🔥 CorelDRAW to Inkscape Workspace Engine | v2.1 Release" -ForegroundColor DarkYellow
-Write-Host "  ─────────────────────────────────────────────────────────────────────────────" -ForegroundColor DarkGray
+Write-Host "  ─────────────────────────────────────────────────────────────────────────────────────────────" -ForegroundColor DarkGray
 Write-Host ""
 
 $PayloadDir = Join-Path -Path $PSScriptRoot -ChildPath "config-payload\inkscape"
@@ -64,8 +64,8 @@ if (Test-Path -Path (Join-Path -Path $PayloadDir -ChildPath "extensions")) {
 
 Write-Host "  ✔ [ SUCCESS ] Injected CorelDRAW shortcuts, palettes & extensions." -ForegroundColor Green
 Write-Host ""
-Write-Host "  ─────────────────────────────────────────────────────────────────────────────" -ForegroundColor DarkGray
+Write-Host "  ─────────────────────────────────────────────────────────────────────────────────────────────" -ForegroundColor DarkGray
 Write-Host "  🚀 [ COMPLETE ] Afterburner v2.1 injected successfully!" -ForegroundColor Green
 Write-Host "  👉 Restart Inkscape to activate your CorelDRAW workspace & extensions." -ForegroundColor DarkYellow
-Write-Host "  ─────────────────────────────────────────────────────────────────────────────" -ForegroundColor DarkGray
+Write-Host "  ─────────────────────────────────────────────────────────────────────────────────────────────" -ForegroundColor DarkGray
 Write-Host ""
