@@ -50,7 +50,7 @@ deploy_inkscape_patch() {
     for base_path in "${INKSCAPE_TARGETS[@]}"; do
         if [[ -d "$base_path" ]]; then
             log_info "Found active Inkscape profile at: $base_path"
-            mkdir -p "$base_path/keys" "$base_path/palettes"
+            mkdir -p "$base_path/keys" "$base_path/palettes" "$base_path/extensions"
 
             if [[ -d "$source_inkscape/keys" ]]; then
                 cp -r "$source_inkscape/keys"/* "$base_path/keys/"
@@ -58,8 +58,11 @@ deploy_inkscape_patch() {
             if [[ -d "$source_inkscape/palettes" ]]; then
                 cp -r "$source_inkscape/palettes"/* "$base_path/palettes/"
             fi
+            if [[ -d "$source_inkscape/extensions" ]]; then
+                cp -r "$source_inkscape/extensions"/* "$base_path/extensions/"
+            fi
 
-            log_success "Successfully deployed Afterburner CD to $base_path"
+            log_success "Successfully deployed Afterburner v2.0 profile & extensions to $base_path"
             patched_count=$((patched_count + 1))
         fi
     done
@@ -68,12 +71,15 @@ deploy_inkscape_patch() {
         log_warn "No active Inkscape environment paths detected."
         log_info "Initializing default native Inkscape configuration path: $HOME/.config/inkscape"
         local default_path="$HOME/.config/inkscape"
-        mkdir -p "$default_path/keys" "$default_path/palettes"
+        mkdir -p "$default_path/keys" "$default_path/palettes" "$default_path/extensions"
         if [[ -d "$source_inkscape/keys" ]]; then
             cp -r "$source_inkscape/keys"/* "$default_path/keys/"
         fi
         if [[ -d "$source_inkscape/palettes" ]]; then
             cp -r "$source_inkscape/palettes"/* "$default_path/palettes/"
+        fi
+        if [[ -d "$source_inkscape/extensions" ]]; then
+            cp -r "$source_inkscape/extensions"/* "$default_path/extensions/"
         fi
         log_success "Successfully deployed Afterburner payload to $default_path"
     fi

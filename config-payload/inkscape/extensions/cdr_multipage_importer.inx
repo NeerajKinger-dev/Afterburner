@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Multi-Page CorelDRAW (.cdr) Import</name>
+    <id>org.afterburner.import.cdr.multipage</id>
+
+    <param name="input_file" type="path" mode="file" filetypes="cdr" _gui-text="Select CorelDRAW (.cdr) File:"></param>
+    <param name="extract_multipage" type="bool" _gui-text="Extract pages into native Inkscape Multi-Page document">true</param>
+    <param name="target_dpi" type="int" min="72" max="1200" _gui-text="Target Rendering DPI:">300</param>
+    <param name="page_margin" type="float" min="0.0" max="500.0" _gui-text="Horizontal Page Spacing Margin (px):">20.0</param>
+
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Afterburner">
+                <submenu name="CorelDRAW Tools"/>
+            </submenu>
+        </effects-menu>
+    </effect>
+
+    <script>
+        <command location="inx" interpreter="python">cdr_multipage_importer.py</command>
+    </script>
+</inkscape-extension>
