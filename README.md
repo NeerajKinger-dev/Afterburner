@@ -33,6 +33,7 @@ Looking for **free vector software that feels like CorelDRAW** without breaking 
 - [Multi-Page CDR Importer Extension (v2.0)](#-multi-page-cdr-importer-extension-v20)
 - [CorelDRAW Compatible Export Extension (v2.1)](#-coreldraw-compatible-export-extension-v21)
 - [How to Make Inkscape Work Like CorelDRAW for Free](#-how-to-make-inkscape-work-like-coreldraw-for-free)
+  - [Activating the CorelDRAW Palette Swatch](#-activating-the-coreldraw-palette-swatch)
 - [Roadmap & Status](#-roadmap--implementation)
 - [Frequently Asked Questions (FAQ)](#-frequently-asked-questions-faq)
 - [License](#-license)
@@ -126,6 +127,17 @@ Open PowerShell inside the `Afterburner` directory:
 .\install.ps1
 ```
 *(If PowerShell script execution is restricted, run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` before running).*
+
+### 🎨 Activating the CorelDRAW Palette Swatch
+
+After running the installer script, follow these steps to enable the CorelDRAW color bar in Inkscape:
+
+1. Launch **Inkscape**.
+2. Look at the **far right corner of the bottom color bar** (next to the scroll arrow `>`).
+3. Click the tiny **palette menu icon** (hamburger menu/arrow).
+4. Select **`CorelDRAW`** from the dropdown list.
+
+> **Tip:** You can also adjust swatch size and row height from that same menu to match CorelDRAW's dense palette layout!
 
 ---
 

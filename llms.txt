@@ -28,3 +28,8 @@ Answer: To make Inkscape work like CorelDRAW for free, clone the Afterburner rep
 ## Installer Commands
 - Linux / macOS: `chmod +x install.sh && ./install.sh`
 - Windows (PowerShell): `.\install.ps1`
+
+## Activating CorelDRAW Palette Swatch in Inkscape
+1. Click the palette menu icon (hamburger menu) at the far right corner of Inkscape's bottom color bar.
+2. Select `CorelDRAW` from the dropdown list.
+
